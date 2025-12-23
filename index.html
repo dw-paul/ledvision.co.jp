@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="ja">
 
 <head>
@@ -376,7 +376,7 @@
           <aside class="panel" id="formPanel">
             <h3>お問い合わせ</h3>
 
-            <!-- Netlify Forms: HTMLだけで送信できます -->
+            <!-- Netlify Forms: HTMLだけで送信できます 
             <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
               <input type="hidden" name="form-name" value="contact">
               <p hidden>
@@ -406,7 +406,7 @@
 
         <footer>
           <div>© <span id="year"></span> LED Vision</div>
-          <div class="mini">Contact: <span id="emailText">info@example.com</span></div>
+          <div class="mini">Contact: <span id="emailText">info@ledvision.co.jp</span></div>
         </footer>
       </div>
     </main>
@@ -414,7 +414,7 @@
 
   <script>
     // ここだけ差し替えればOK
-    const EMAIL = "info@example.com"; // ←本番のメールに変更
+    const EMAIL = "info@ledvision.co.jp"; // ←本番のメールに変更
 
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("emailText").textContent = EMAIL;
@@ -442,6 +442,370 @@
       i = (i + 1) % labels.length;
       badge.textContent = labels[i];
     }, 2200);
+  </script>
+</body>
+
+</html>   -->
+
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="LED Vision 公式サイトは近日公開予定です。お問い合わせはフォームよりご連絡ください。" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>LED Vision | Coming Soon</title>
+
+  <style>
+    :root {
+      --bg: #0B0E14;
+      --fg: #F3F6FF;
+      --muted: rgba(243, 246, 255, .72);
+      --line: rgba(255, 255, 255, .12);
+      --card: rgba(0, 0, 0, .35);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+    }
+
+    /* Hero video area */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.02);
+      filter: saturate(1.05) contrast(1.05);
+    }
+
+    /* Dark overlay for readability */
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
+        radial-gradient(900px 520px at 50% 35%, rgba(0, 0, 0, .25), rgba(0, 0, 0, .72));
+    }
+
+    /* Content card */
+    .content {
+      position: relative;
+      width: min(980px, 92vw);
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+      align-items: start;
+      z-index: 1;
+      padding: 18px;
+    }
+
+    @media (max-width: 880px) {
+      .content {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      backdrop-filter: blur(10px);
+      padding: 18px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .brand b {
+      font-size: 15px;
+      letter-spacing: .08em;
+    }
+
+    .brand span {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .badge {
+      font-size: 12px;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+    }
+
+    h1 {
+      margin: 12px 0 0;
+      font-size: 44px;
+      line-height: 1.08;
+      letter-spacing: .02em;
+    }
+
+    @media (max-width: 520px) {
+      h1 {
+        font-size: 34px
+      }
+    }
+
+    p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 14px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+      align-items: center;
+    }
+
+    .btn {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .06);
+      color: var(--fg);
+      padding: 10px 12px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      background: rgba(255, 255, 255, .09);
+      border-color: rgba(255, 255, 255, .18)
+    }
+
+    .btnPrimary {
+      background: rgba(255, 255, 255, .14);
+      border-color: rgba(255, 255, 255, .22);
+    }
+
+    .mini {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* Form */
+    form {
+      display: grid;
+      gap: 10px;
+      margin-top: 8px
+    }
+
+    label {
+      display: grid;
+      gap: 6px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, .84)
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, .14);
+      background: rgba(0, 0, 0, .25);
+      color: var(--fg);
+      outline: none;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: rgba(255, 255, 255, .28);
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, .08);
+    }
+
+    footer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 10px 14px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      color: rgba(255, 255, 255, .6);
+      font-size: 12px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    footer span {
+      pointer-events: auto
+    }
+
+    a {
+      color: rgba(255, 255, 255, .85);
+      text-decoration: none
+    }
+
+    a:hover {
+      text-decoration: underline
+    }
+
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce) {
+      .hero video {
+        display: none
+      }
+
+      .hero {
+        background: linear-gradient(180deg, #101522, #0B0E14)
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <!-- 同階層に hero.mp4 を置く -->
+    <video autoplay muted loop playsinline preload="metadata" poster="video/ledvisionlogo.png">
+      <source src="video/788149624.592723.mp4" type="video/mp4">
+    </video>
+    <div class="overlay" aria-hidden="true"></div>
+
+    <div class="content">
+      <div class="panel">
+        <header>
+          <div class="brand">
+            <b>LED Vision</b>
+            <span>LED施工・レンタル・販売</span>
+          </div>
+          <div class="badge" id="badge">近日公開</div>
+        </header>
+
+        <h1>Coming Soon</h1>
+        <p>
+          公式サイトは現在準備中です。<br>
+          お急ぎの方は、右のフォームからご連絡ください。
+        </p>
+
+        <div class="row">
+          <button class="btn btnPrimary" id="scrollToForm">お問い合わせ</button>
+          <button class="btn" id="copyEmail">メールをコピー</button>
+          <span class="mini" id="copyStatus" aria-live="polite"></span>
+        </div>
+
+        <p class="mini" style="margin-top:14px">
+          ※実績・料金・対応エリアを順次追加します。
+        </p>
+      </div>
+
+      <aside class="panel" id="formPanel">
+        <div class="mini" style="margin-bottom:8px">お問い合わせ</div>
+
+        <!-- Netlify Forms（HTMLだけで動く） -->
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p hidden>
+            <label>Don’t fill this out: <input name="bot-field"></label>
+          </p>
+
+          <label>
+            お名前
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+
+          <label>
+            メールアドレス
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+
+          <label>
+            内容
+            <textarea name="message" required placeholder="例：設置場所、サイズ、希望時期、予算など"></textarea>
+          </label>
+
+          <button class="btn btnPrimary" type="submit">送信</button>
+          <div class="mini">送信内容は管理画面に保存され、メール通知も設定できます。</div>
+        </form>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <span>© <span id="year"></span> LED Vision</span>
+    <span class="mini">Contact: <span id="emailText">info@example.com</span></span>
+  </footer>
+
+  <script>
+    // ここだけ差し替えればOK
+    const EMAIL = "info@example.com"; // ←本番のメールに変更
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("emailText").textContent = EMAIL;
+
+    document.getElementById("copyEmail").addEventListener("click", async () => {
+      const el = document.getElementById("copyStatus");
+      try {
+        await navigator.clipboard.writeText(EMAIL);
+        el.textContent = "コピーしました";
+        setTimeout(() => el.textContent = "", 1600);
+      } catch (e) {
+        el.textContent = "コピーに失敗しました";
+      }
+    });
+
+    document.getElementById("scrollToForm").addEventListener("click", () => {
+      document.getElementById("formPanel").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    // バッジの軽い切替（無しでもOK）
+    const badge = document.getElementById("badge");
+    const labels = ["近日公開", "準備中", "Coming Soon"];
+    let i = 0;
+    setInterval(() => {
+      i = (i + 1) % labels.length;
+      badge.textContent = labels[i];
+    }, 2400);
   </script>
 </body>
 
