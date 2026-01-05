@@ -485,8 +485,15 @@
 
     /* Hero video area */
     @keyframes flash {
-      0%, 100% { filter: brightness(1); }
-      50% { filter: brightness(1.4); }
+
+      0%,
+      100% {
+        filter: brightness(1);
+      }
+
+      50% {
+        filter: brightness(1.4);
+      }
     }
 
     .hero {
@@ -497,27 +504,30 @@
       overflow: hidden;
       animation: flash 6s ease-in-out infinite;
     }
-    
+
     .hero::after {
       content: "";
       position: absolute;
       inset: 0;
       background:
-        repeating-linear-gradient(
-          to bottom,
-          rgba(255,255,255,.06),
-          rgba(255,255,255,.06) 1px,
+        repeating-linear-gradient(to bottom,
+          rgba(255, 255, 255, .06),
+          rgba(255, 255, 255, .06) 1px,
           transparent 1px,
-          transparent 4px
-        );
+          transparent 4px);
       mix-blend-mode: overlay;
       animation: scan 1.4s linear infinite;
       pointer-events: none;
     }
 
     @keyframes scan {
-      from { background-position-y: 0; }
-      to   { background-position-y: 100%; }
+      from {
+        background-position-y: 0;
+      }
+
+      to {
+        background-position-y: 100%;
+      }
     }
 
     .hero video {
@@ -650,9 +660,9 @@
     .btnPrimary {
       background: rgba(255, 255, 255, .14);
       border-color: rgba(255, 255, 255, .22);
-        box-shadow:
-    0 0 12px rgba(0,229,255,.8),
-    inset 0 0 12px rgba(255,255,255,.35);
+      box-shadow:
+        0 0 12px rgba(0, 229, 255, .8),
+        inset 0 0 12px rgba(255, 255, 255, .35);
     }
 
     .mini {
@@ -776,7 +786,7 @@
         <div class="mini" style="margin-bottom:8px">お問い合わせ</div>
 
         <!-- Netlify Forms（HTMLだけで動く） -->
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thanks.html">
           <input type="hidden" name="form-name" value="contact">
           <p hidden>
             <label>Don’t fill this out: <input name="bot-field"></label>
@@ -811,7 +821,7 @@
 
   <script>
     // ここだけ差し替えればOK
-    const EMAIL = "info@ledvision.co.jp"; // ←本番のメールに変更
+    const EMAIL = "info@ledvision.co.xx"; // ←本番のメールに変更
 
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("emailText").textContent = EMAIL;
