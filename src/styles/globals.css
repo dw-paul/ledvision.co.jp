@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Neon Color System */
+  --neon-red: #ff0844;
+  --neon-yellow: #ffeb3b;
+  --neon-purple: #d946ef;
+  --neon-blue: #00d9ff;
+  --neon-pink: #ff006e;
+  --neon-orange: #ff6d00;
+  
+  /* Dark Backgrounds */
+  --bg-black: #0a0a0a;
+  --bg-navy: #0f0f23;
+  --bg-dark: #1a1a2e;
+  
+  /* Glow Effects */
+  --glow-red: 0 0 20px var(--neon-red), 0 0 40px var(--neon-red), 0 0 60px var(--neon-red);
+  --glow-yellow: 0 0 20px var(--neon-yellow), 0 0 40px var(--neon-yellow), 0 0 60px var(--neon-yellow);
+  --glow-purple: 0 0 20px var(--neon-purple), 0 0 40px var(--neon-purple), 0 0 60px var(--neon-purple);
+  --glow-blue: 0 0 20px var(--neon-blue), 0 0 40px var(--neon-blue), 0 0 60px var(--neon-blue);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  background: var(--bg-black);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Ultra Bold Headings */
+h1, h2, h3 {
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: clamp(3rem, 10vw, 7rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 6vw, 4.5rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+/* Neon Text Effects */
+.neon-text-red {
+  color: var(--neon-red);
+  text-shadow: var(--glow-red);
+  animation: flicker 2s infinite alternate;
+}
+
+.neon-text-yellow {
+  color: var(--neon-yellow);
+  text-shadow: var(--glow-yellow);
+}
+
+.neon-text-purple {
+  color: var(--neon-purple);
+  text-shadow: var(--glow-purple);
+}
+
+.neon-text-blue {
+  color: var(--neon-blue);
+  text-shadow: var(--glow-blue);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--neon-red) 0%, var(--neon-yellow) 50%, var(--neon-purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Neon Borders */
+.neon-border-red {
+  border: 3px solid var(--neon-red);
+  box-shadow: var(--glow-red), inset 0 0 20px rgba(255, 8, 68, 0.3);
+}
+
+.neon-border-yellow {
+  border: 3px solid var(--neon-yellow);
+  box-shadow: var(--glow-yellow), inset 0 0 20px rgba(255, 235, 59, 0.3);
+}
+
+.neon-border-blue {
+  border: 3px solid var(--neon-blue);
+  box-shadow: var(--glow-blue), inset 0 0 20px rgba(0, 217, 255, 0.3);
+}
+
+/* Button Glow */
+.btn-glow {
+  transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px currentColor, 0 0 60px currentColor;
+}
+
+/* Animations */
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+    text-shadow: var(--glow-red);
+  }
+  20%, 24%, 55% {
+    opacity: 0.8;
+    text-shadow: 0 0 10px var(--neon-red);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--neon-red), var(--neon-purple));
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--neon-yellow), var(--neon-red));
+}
+
+/* Utility Classes */
+.text-stroke {
+  -webkit-text-stroke: 2px currentColor;
+  paint-order: stroke fill;
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(135deg, var(--bg-black) 0%, var(--bg-navy) 50%, var(--bg-dark) 100%);
+}
+
+.bg-gradient-neon {
+  background: linear-gradient(135deg, rgba(255, 8, 68, 0.2) 0%, rgba(217, 70, 239, 0.2) 50%, rgba(0, 217, 255, 0.2) 100%);
+  background-size: 200% 200%;
+  animation: rotate-gradient 5s ease infinite;
+}
