@@ -9,13 +9,13 @@ export function LPUseCases() {
       tag: 'RETAIL'
     },
     {
-      image: 'OFFICE.png',
+      image: '/OFFICE.png',
       title: '受付・待合',
       description: '企業情報・案内表示',
       tag: 'OFFICE'
     },
     {
-      image: 'https://images.unsplash.com/photo-1769284012089-14765f328786?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxleGhpYml0aW9uJTIwYm9vdGglMjBpbmRvb3IlMjBkaXNwbGF5fGVufDF8fHx8MTc3MDA5MzEyNXww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/booth.jpg',
       title: '展示会ブース',
       description: '製品紹介・動画訴求',
       tag: 'EVENT'
