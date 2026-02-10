@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ContactForm } from '../components/ContactForm';
 
 export function ComingSoon() {
   const EMAIL = "info@ledvision.co.jp";
@@ -64,7 +63,29 @@ export function ComingSoon() {
 
           <div id="formPanel" className="bg-black/40 border border-white/10 rounded-2xl p-6">
             <h2 className="text-xl font-bold mb-4">お問い合わせ</h2>
-            <ContactForm formName="contact" />
+            
+            <form name="contact" method="POST" data-netlify="true" action="/thanks.html" className="space-y-4">
+              <input type="hidden" name="form-name" value="contact" />
+
+              <div>
+                <label className="block text-sm font-bold mb-2">お名前</label>
+                <input type="text" name="name" required className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-xl text-white" />
+              </div>
+
+              <div>
+                <label className="block text-sm font-bold mb-2">メールアドレス</label>
+                <input type="email" name="email" required className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-xl text-white" />
+              </div>
+
+              <div>
+                <label className="block text-sm font-bold mb-2">内容</label>
+                <textarea name="message" required rows={4} className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-xl text-white resize-none"></textarea>
+              </div>
+
+              <button type="submit" className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl font-bold">
+                送信
+              </button>
+            </form>
           </div>
         </div>
       </div>
