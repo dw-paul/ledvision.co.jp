@@ -29,7 +29,7 @@ export function LPPriceBlock() {
             <span className="text-white">です。</span>
           </h2>
 
-          <p className="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed whitespace-nowrap">
+          <p className="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed whitespace-pre-wrap pt-4">
             他社との相見積もり、大歓迎。比較していただければ、この価格の価値がわかります。
           </p>
         </div>

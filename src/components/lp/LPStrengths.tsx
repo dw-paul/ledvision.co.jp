@@ -12,7 +12,6 @@ export function LPStrengths() {
         '120inch：69.8万円（税別）',
         '150inch：120万円（税別）',
         '180inch：180万円（税別）',
-        '他社比較歓迎・相見積もりOK'
       ],
       color: 'yellow',
       gradient: 'from-yellow-500 to-yellow-600',
@@ -65,7 +64,7 @@ export function LPStrengths() {
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-6">
             選ばれる3つの強み
           </h2>
-          <div className="h-1.5 w-24 mx-auto bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-yellow-500 rounded-full"></div>
+          <div className="h-1.5 w-24 mx-auto bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-yellow-500 rounded-full mt-4"></div>
         </div>
 
         {/* Strengths Grid */}

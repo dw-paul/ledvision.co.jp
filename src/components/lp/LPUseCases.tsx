@@ -3,13 +3,13 @@ import React from 'react';
 export function LPUseCases() {
   const cases = [
     {
-      image: 'https://images.unsplash.com/photo-1714206466568-4bc91251252a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvb3IlMjBMRUQlMjBkaXNwbGF5JTIwcmV0YWlsJTIwc3RvcmV8ZW58MXx8fHwxNzcwMDkzMTI0fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/RETAIL.png',
       title: '店舗内サイネージ',
       description: '商品情報・セール告知',
       tag: 'RETAIL'
     },
     {
-      image: 'https://images.unsplash.com/photo-1763873993447-1d0be71a96d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjByZWNlcHRpb24lMjBhcmVhJTIwZGlzcGxheXxlbnwxfHx8fDE3NzAwOTMxMjV8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'OFFICE.png',
       title: '受付・待合',
       description: '企業情報・案内表示',
       tag: 'OFFICE'
@@ -21,19 +21,19 @@ export function LPUseCases() {
       tag: 'EVENT'
     },
     {
-      image: 'https://images.unsplash.com/photo-1764810815228-b7f9432eec5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25mZXJlbmNlJTIwcm9vbSUyMGRpc3BsYXklMjBzY3JlZW58ZW58MXx8fHwxNzcwMDkzMTI1fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'meeting.png',
       title: '会議室',
       description: 'プレゼン・大画面表示',
       tag: 'MEETING'
     },
     {
-      image: 'https://images.unsplash.com/photo-1736219156387-cef1f5f8d503?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaG93cm9vbSUyMGRpZ2l0YWwlMjBzY3JlZW58ZW58MXx8fHwxNzcwMDkzMTI2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/showroom.jpg',
       title: 'ショールーム',
       description: 'ブランド演出',
       tag: 'SHOWROOM'
     },
     {
-      image: 'https://images.unsplash.com/photo-1769265114898-083ad50197f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwc2lnbmFnZSUyMGluZG9vciUyMHNob3BwaW5nfGVufDF8fHx8MTc3MDA5MzEyNHww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/LIVE.png',
       title: 'イベント室内',
       description: 'ライブ・演出効果',
       tag: 'LIVE'
@@ -49,11 +49,11 @@ export function LPUseCases() {
         {/* Section Title */}
         <div className="text-center mb-10 sm:mb-12">
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
-            <span className="bg-gradient-to-r from-cyan-400 via-fuchsia-400 to-yellow-400 bg-clip-text text-transparent">
+            <span className="text-white bg-clip-text text-transparent">
               活用イメージ
             </span>
           </h2>
-          <div className="h-1.5 w-24 mx-auto bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-yellow-500 rounded-full mb-5"></div>
+          <div className="h-1.5 w-24 mx-auto bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-yellow-500 rounded-full mb-5 mt-4"></div>
           <p className="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto">
             屋内のあらゆるシーンで活躍するLEDビジョン
           </p>
