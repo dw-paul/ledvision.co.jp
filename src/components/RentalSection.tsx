@@ -8,7 +8,7 @@ const rentalPlans = [
     size: '1000mm × 500mm',
     price: '¥15,000',
     unit: '/ 1枚・1日',
-    pitch: '2.6mmピッチ',
+    pitch: '2.5mmピッチ',
     tag: '展示会に最適',
     color: 'red',
     image: 'https://images.unsplash.com/photo-1762028892701-692dc360db08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxleGhpYml0aW9uJTIwYm9vdGglMjBkaXNwbGF5fGVufDF8fHx8MTc2ODgwODM4N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
@@ -44,7 +44,7 @@ const rentalPlans = [
     size: '3000mm × 2000mm',
     price: '¥280,000',
     unit: '/ 月額',
-    pitch: '2.6mmピッチ',
+    pitch: '2.5mmピッチ',
     tag: '月額制で安心',
     color: 'purple',
     image: 'https://images.unsplash.com/photo-1542211183455-2afe6f173cdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwc2lnbmFnZXxlbnwxfHx8fDE3Njg4MDgzODh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
@@ -299,7 +299,7 @@ export function RentalSection() {
                 <div className="flex items-start gap-3">
                   <Zap className="w-6 h-6 text-[var(--neon-yellow)] flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-black text-lg text-white">2.6mmピッチの高精細</div>
+                    <div className="font-black text-lg text-white">2.5mmピッチの高精細</div>
                     <div className="text-sm text-gray-400">近くで見ても綺麗。商品の細部まで表現</div>
                   </div>
                 </div>

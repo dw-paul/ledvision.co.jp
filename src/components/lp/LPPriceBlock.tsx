@@ -55,7 +55,7 @@ export function LPPriceBlock() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-2 text-sm text-zinc-700">
                   <CheckCircle2 size={18} className="text-cyan-600 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="font-bold">2.6mmピッチ高精細</span>
+                  <span className="font-bold">2.5mmピッチ高精細</span>
                 </div>
                 <div className="flex items-start gap-2 text-sm text-zinc-700">
                   <CheckCircle2 size={18} className="text-cyan-600 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
@@ -99,7 +99,7 @@ export function LPPriceBlock() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-2 text-sm text-zinc-700">
                   <CheckCircle2 size={18} className="text-fuchsia-600 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="font-bold">2.6mmピッチ高精細</span>
+                  <span className="font-bold">2.5mmピッチ高精細</span>
                 </div>
                 <div className="flex items-start gap-2 text-sm text-zinc-700">
                   <CheckCircle2 size={18} className="text-fuchsia-600 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
@@ -139,7 +139,7 @@ export function LPPriceBlock() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-2 text-sm text-zinc-700">
                   <CheckCircle2 size={18} className="text-yellow-600 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="font-bold">2.6mmピッチ高精細</span>
+                  <span className="font-bold">2.5mmピッチ高精細</span>
                 </div>
                 <div className="flex items-start gap-2 text-sm text-zinc-700">
                   <CheckCircle2 size={18} className="text-yellow-600 flex-shrink-0 mt-0.5" strokeWidth={2.5} />

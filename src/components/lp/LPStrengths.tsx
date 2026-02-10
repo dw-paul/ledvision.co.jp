@@ -20,7 +20,7 @@ export function LPStrengths() {
     {
       icon: Eye,
       number: '02',
-      title: '2.6mmピッチ高精細',
+      title: '2.5mmピッチ高精細',
       lead: '近距離でも美しい、プロ仕様の映像品質',
       points: [
         '近距離でも美しい映像',

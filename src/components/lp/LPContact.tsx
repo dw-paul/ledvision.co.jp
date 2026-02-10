@@ -47,7 +47,7 @@ export function LPContact() {
               <Phone size={24} className="text-white" strokeWidth={2} />
             </div>
             <div className="text-sm font-bold text-zinc-600 mb-1">電話</div>
-            <div className="text-xl sm:text-2xl font-black text-cyan-700">0120-XXX-XXX</div>
+            <div className="text-xl sm:text-2xl font-black text-cyan-700">050-3593-7599</div>
             <div className="text-xs text-zinc-500 mt-1">9:00～18:00（平日）</div>
           </div>
 

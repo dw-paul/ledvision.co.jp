@@ -12,7 +12,7 @@ export function CaseImages() {
       image: 'https://images.unsplash.com/photo-1741243413398-2e5e407da204?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXJnZSUyMExFRCUyMHNjcmVlbiUyMGNvbW1lcmNpYWx8ZW58MXx8fHwxNzY5Mzc3NDEyfDA&ixlib=rb-4.1.0&q=80&w=1080',
       category: '商業施設',
       title: 'エントランスディスプレイ',
-      specs: '5m×3m・屋内用・2.6mmピッチ'
+      specs: '5m×3m・屋内用・2.5mmピッチ'
     },
     {
       image: 'https://images.unsplash.com/photo-1764795850248-97a5e986b242?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwZGlzcGxheSUyMHN0b3JlfGVufDF8fHx8MTc2OTM3NzQxMnww&ixlib=rb-4.1.0&q=80&w=1080',
@@ -24,7 +24,7 @@ export function CaseImages() {
       image: 'https://images.unsplash.com/photo-1561348613-6d08019ace21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXRhaWwlMjBzdG9yZSUyMGxpZ2h0c3xlbnwxfHx8fDE3NjkzNzc0MTN8MA&ixlib=rb-4.1.0&q=80&w=1080',
       category: '小売',
       title: '店内マルチディスプレイ',
-      specs: '1.5m×1m×3面・屋内用・2.6mmピッチ'
+      specs: '1.5m×1m×3面・屋内用・2.5mmピッチ'
     },
     {
       image: 'https://images.unsplash.com/photo-1762028892701-692dc360db08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxldmVudCUyMGV4aGliaXRpb24lMjBib290aHxlbnwxfHx8fDE3NjkzNzc0MTN8MA&ixlib=rb-4.1.0&q=80&w=1080',

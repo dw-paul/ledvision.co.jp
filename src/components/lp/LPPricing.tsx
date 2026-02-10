@@ -15,7 +15,7 @@ export function LPPricing() {
       dimensions: '約2.7m × 1.5m',
       price: '69.8万円',
       features: [
-        '2.6mmピッチ高精細',
+        '2.5mmピッチ高精細',
         '屋内用設計',
         '設置サポート',
         '納品後1か月オンラインサポート',
@@ -29,7 +29,7 @@ export function LPPricing() {
       dimensions: '約3.3m × 1.9m',
       price: '120万円',
       features: [
-        '2.6mmピッチ高精細',
+        '2.5mmピッチ高精細',
         '屋内用設計',
         '設置サポート',
         '納品後1か月オンラインサポート',
@@ -43,7 +43,7 @@ export function LPPricing() {
       dimensions: '約4.0m × 2.3m',
       price: '180万円',
       features: [
-        '2.6mmピッチ高精細',
+        '2.5mmピッチ高精細',
         '屋内用設計',
         '設置サポート',
         '納品後1か月オンラインサポート',

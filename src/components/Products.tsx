@@ -9,7 +9,7 @@ export function Products() {
       features: [
         '高輝度5000cd/㎡以上',
         'IP65防水防塵規格',
-        'ピッチ：2.6mm～10mm',
+        'ピッチ：2.5mm～10mm',
         '24時間連続稼働対応',
         '5年間保証'
       ],

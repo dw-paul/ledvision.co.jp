@@ -21,7 +21,7 @@ export function LPUseCases() {
       tag: 'EVENT'
     },
     {
-      image: 'meeting.png',
+      image: '/meeting.png',
       title: '会議室',
       description: 'プレゼン・大画面表示',
       tag: 'MEETING'
