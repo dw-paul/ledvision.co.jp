@@ -67,7 +67,7 @@ export function LPContact() {
             お問い合わせフォーム
           </h3>
           
-          <form name="LPcontact" method="POST" data-netlify="true" action="/thanks.html" className="space-y-5">
+          <form name="lp-contact" method="POST" data-netlify="true" anetlify-honeypot="bot-field" className="space-y-5" action="/thanks.html">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
               <div>
                 <label htmlFor="name" className="block text-sm font-bold text-zinc-700 mb-2">

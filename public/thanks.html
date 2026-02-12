@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>送信完了 | LED Vision</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #0B0E14;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 1.5rem;
+      padding: 3rem 2rem;
+    }
+    .check {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0.75rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.2s;
+    }
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+    .note {
+      margin-top: 2rem;
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="check">✓</div>
+    <h1>送信完了しました</h1>
+    <p>
+      お問い合わせありがとうございます。<br>
+      内容を確認の上、担当者よりご連絡いたします。
+    </p>
+    <a href="/lp" class="btn">LPに戻る</a>
+    <p class="note">5秒後に自動的にLPへ戻ります</p>
+  </div>
+  
+  <script>
+    setTimeout(() => {
+      window.location.href = '/lp';
+    }, 5000);
+  </script>
+</body>
+</html>
